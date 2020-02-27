@@ -1,0 +1,331 @@
+body
+{
+    font-family: sans-serif;
+    display: flex;
+}
+
+
+
+/* PARTIE GAUCHE */
+
+
+
+img
+{
+    width: 151px;
+    border-radius: 50%;
+    box-shadow: 0 0 3px 0px black;
+    margin-top: 50px;
+}
+
+
+#portrait
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+
+}
+
+aside
+{
+    width: 23%;
+    background-color: #FECA07;
+}
+
+aside h2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #404040;
+    background-color: #404040;
+    height: 32px;
+    color: #FECA07;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.aside_section
+{
+    padding-top: 10px;
+}
+
+aside p
+{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.loisirs
+{
+    margin-top: 555px;
+}
+
+#logos_loisirs
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.loisirs_icon1
+{
+    font-size: 20px;
+    border: 1px solid;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.loisirs_icon2
+{
+    font-size: 20px;
+    border: 1px solid;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50%;
+}
+
+.loisirs_icon3
+{
+    font-size: 20px;
+    border: 1px solid;
+    padding: 7px;
+    padding-right: 9px;
+    padding-left: 9px;
+    border-radius: 50%;
+}
+
+.loisirs_icon4
+{
+    font-size: 20px;
+    border: 1px solid;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+
+
+
+/* PARTIE DROITE */
+
+
+header
+{
+    margin-bottom: 140px;
+}
+
+#main_block
+{
+    width: 67%;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+
+#title
+{
+    font-weight: lighter;
+    font-size: 45px;
+}
+
+#title span
+{
+    color:#FECA07 ;
+}
+
+header h2
+{
+    font-size: 21px;
+    margin-top: -29px;
+    font-weight: lighter;
+}
+
+#yellow_underline
+{
+    text-decoration: underline;
+    text-decoration-color: #FECA07;
+}
+
+section h3
+{
+    text-transform: uppercase;
+    margin-left: 75px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+section p
+
+{
+    font-size: 14px;
+}
+
+p 
+{
+    overflow-wrap: break-word;
+}
+
+section h4
+{
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+hr{
+    width: 100%;
+    height: 1.5px;
+    background-color: #f90;
+    border: none; /*on supprime le style par défaut*/
+  }
+
+  .text_blocks
+  {
+      display: flex;
+      justify-content: space-between;
+  }
+
+
+
+  .text_blocks div
+  {
+      width: 50%;
+  }
+
+.recommandations_block
+{
+    width: 90%;
+}
+
+
+.banner
+{
+    display: flex;
+    align-items: center;
+}
+
+.banner h3
+{
+    margin-left: 40px;
+}
+
+#yellow_underline
+{
+    background-color: #FECA07;
+    width: 60px;
+    height: 2px;
+    margin-top: -15px;
+}
+
+.icons 
+{
+    color: #FECA07;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+/* media query*/
+
+
+
+@media all and (min-width:601px) and (max-width: 875px)
+{
+
+    aside h2 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        background-color: #404040;
+        background-color: #404040;
+        height: 25px;
+        color: #FECA07;
+        font-size: 15px;
+        font-weight: 500;
+    }   
+    
+    aside p
+    {
+        font-size: 13px;
+        overflow-wrap: break-word;
+    }
+
+    aside img
+    {
+        width: 115px;
+    }
+
+    p
+    {
+        overflow-wrap: break-word;
+    }
+
+    .text_blocks
+    {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main_ul
+    {
+        display: flex;
+        justify-content: center;   
+    }
+}
+
+@media all and (max-width: 600px)
+{
+    body
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    
+    }
+
+    aside
+    {
+        width: 100%;
+        height: 175px;
+    }
+
+    #portrait 
+    {
+        display: block;
+        margin-top: -20px;
+        margin-left: 20px;
+    }
+
+    header 
+    {
+        width: 95%;
+        margin-top: -160px;
+        margin-left: 105px;
+    }
+
+    #title
+    {
+        font-size: 33px;
+    }
+
+    header h2
+    {
+        font-size: 17px;
+    }
+
+    #yellow_underline
+    {
+        text-decoration: underline;
+        text-decoration-color: white;
+    }
+}
