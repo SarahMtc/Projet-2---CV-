@@ -1,10 +1,20 @@
 body
 {
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#main-content {
+    width: 100%;
+    margin: 0;
     display: flex;
 }
 
-
+#small_header
+{
+    display: none
+}
 
 /* PARTIE GAUCHE */
 
@@ -30,7 +40,7 @@ img
 
 aside
 {
-    width: 23%;
+    width: 30%;
     background-color: #FECA07;
 }
 
@@ -124,17 +134,24 @@ header
 #main_block
 {
     width: 67%;
-    padding-left: 60px;
     padding-top: 30px;
+    margin-left: 40px;
 }
 
-#title
+.main_ul
+{
+    display: flex;
+    width: 200px;
+}
+
+.title
 {
     font-weight: lighter;
     font-size: 45px;
+    margin-left: 60px;
 }
 
-#title span
+.title span
 {
     color:#FECA07 ;
 }
@@ -144,12 +161,34 @@ header h2
     font-size: 21px;
     margin-top: -29px;
     font-weight: lighter;
+    margin-left: 65px;
 }
 
-#yellow_underline
+.yellow_underline
 {
     text-decoration: underline;
     text-decoration-color: #FECA07;
+    margin-left: 70px;
+
+}
+
+.yellow_circle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px #FECA07 solid;
+}
+
+.small_yellow_round
+{
+    width: 5px;
+    height: 5px;
+    background-color: #FECA07;
+    border-radius: 50%;
 }
 
 section h3
@@ -188,11 +227,13 @@ hr{
   {
       display: flex;
       justify-content: space-between;
+      align-items: baseline;
+      padding-left: 30px;
   }
 
 
 
-  .text_blocks div
+  .text_blocks > div
   {
       width: 50%;
   }
@@ -214,7 +255,7 @@ hr{
     margin-left: 40px;
 }
 
-#yellow_underline
+.yellow_underline
 {
     background-color: #FECA07;
     width: 60px;
@@ -225,14 +266,13 @@ hr{
 .icons 
 {
     color: #FECA07;
-    width: 20px;
-    height: 20px;
+    font-size: 40px;
 }
 
 
 
 
-/* media query*/
+/* media  query*/
 
 
 
@@ -249,7 +289,7 @@ hr{
         background-color: #404040;
         height: 25px;
         color: #FECA07;
-        font-size: 15px;
+        font-size: 12px;
         font-weight: 500;
     }   
     
@@ -269,51 +309,168 @@ hr{
         overflow-wrap: break-word;
     }
 
+    header
+    {
+        margin-top: 55px;
+        margin-bottom: 55px;
+    }
+
+    header h2
+    {
+        text-align: center;
+    }
+
+    .yellow_underline
+    {
+       margin-left: 185px; 
+    }
+
+    .loisirs
+    {
+        margin-top: 670px;
+    }
+
+    #logos_loisirs
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .loisirs_icon1
+    {
+        margin-bottom: 20px;
+    }
+
+    .loisirs_icon2
+    {
+        margin-bottom: 20px;
+    }
+
+    .loisirs_icon3
+    {
+        margin-bottom: 20px;
+    }
+
     .text_blocks
     {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .text_blocks div
+    {
+        width: 100%;
+        margin-top: -10px;  
+    }
+
+    .text_blocks div h4
+    {
+        font-size: 15px;
+    }
+    
+    .banner
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner h3
+    {
+        font-size: 20px;
     }
 
     .main_ul
     {
-        display: flex;
-        justify-content: center;   
+        font-size: 15px;
     }
 }
 
+
+
+
+
 @media all and (max-width: 600px)
 {
-    body
+    #main-content
+    {
+
+        flex-direction: column;
+    }
+
+    #portrait
     {
         display: flex;
         justify-content: center;
-        flex-direction: column;
-    
+        margin-bottom: 90px;
+        margin-top: 20px;
+    }
+
+    #main_block
+    {
+        width: 80%;
+        margin-right: 10%;
+    }
+
+    .title span
+    {
+        color: black;
     }
 
     aside
     {
+        margin: 0px;
         width: 100%;
-        height: 175px;
+        text-align: center;
     }
 
-    #portrait 
+    .aside_section
+    {
+        width: 90%;
+        margin: auto;
+    }
+
+    aside p
+    {
+        display: flex;
+        width: 50%;
+        margin: auto;
+    }
+
+    aside h2
+    {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .loisirs
+    {
+        margin-top: 0px;
+    }
+
+    #portrait img 
+    {
+        width: 130px;
+        margin-top: 45px;
+        margin-left: 25px;
+    }
+
+    #small_header 
     {
         display: block;
-        margin-top: -20px;
-        margin-left: 20px;
+        text-align: center;
+        margin-bottom: 0;
     }
 
-    header 
+    #regular_header
     {
-        width: 95%;
-        margin-top: -160px;
-        margin-left: 105px;
+        display: none;
     }
 
-    #title
+    .title
     {
         font-size: 33px;
     }
@@ -323,9 +480,16 @@ hr{
         font-size: 17px;
     }
 
-    #yellow_underline
+    .yellow_underline
     {
         text-decoration: underline;
-        text-decoration-color: white;
+        text-decoration-color: rgb(0, 0, 0);
+    }
+
+    #logos_loisirs
+    {
+        display: flex;
+        align-items: center;
+        margin-bottom: 35px;
     }
 }
