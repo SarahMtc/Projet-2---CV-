@@ -142,6 +142,13 @@ header
 {
     display: flex;
     width: 200px;
+    margin-left: -15px;
+}
+
+.second_ul
+{
+    display: flex;
+    margin-left: -15px;
 }
 
 .title
@@ -181,6 +188,7 @@ header h2
     height: 10px;
     border-radius: 50%;
     border: 2px #FECA07 solid;
+    margin-right: 15px;
 }
 
 .small_yellow_round
@@ -189,6 +197,17 @@ header h2
     height: 5px;
     background-color: #FECA07;
     border-radius: 50%;
+}
+
+.yellow_dot
+{
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    margin-top: 5px;
+    margin-right: 15px;
+    border-radius: 50%;
+    background-color: #FECA07;
 }
 
 section h3
@@ -228,7 +247,7 @@ hr{
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      padding-left: 30px;
+
   }
 
 
@@ -363,7 +382,6 @@ hr{
 
     .text_blocks div
     {
-        width: 100%;
         margin-top: -10px;  
     }
 
@@ -386,7 +404,29 @@ hr{
     .main_ul
     {
         font-size: 15px;
+        margin-left: 35%;
     }
+
+    .second_ul
+    {
+        margin-left: 35%;
+    }
+
+    .yellow_circle
+    {
+        display: none;
+    }
+
+    .small_yellow_round
+    {
+        display: none;
+    }
+
+    .yellow_dot
+    {
+        display: none;
+    }
+
 }
 
 
