@@ -151,14 +151,14 @@ header
     margin-left: -15px;
 }
 
-.title
+h1
 {
     font-weight: lighter;
     font-size: 45px;
     margin-left: 60px;
 }
 
-.title span
+h1 span
 {
     color:#FECA07 ;
 }
@@ -455,7 +455,7 @@ hr{
         margin-right: 10%;
     }
 
-    .title span
+    h1 span
     {
         color: black;
     }
@@ -510,7 +510,7 @@ hr{
         display: none;
     }
 
-    .title
+    h1
     {
         font-size: 33px;
     }
