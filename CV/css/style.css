@@ -5,7 +5,7 @@ body
     padding: 0;
 }
 
-#main-content {
+main {
     width: 100%;
     margin: 0;
     display: flex;
@@ -435,7 +435,7 @@ hr{
 
 @media all and (max-width: 600px)
 {
-    #main-content
+    main
     {
 
         flex-direction: column;
